@@ -1,0 +1,207 @@
+/* Geral */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body {
+    background-color: #fafafa;
+}
+/* Conteiners */
+#conteinerMain {
+    display: flex;
+    margin-top: 30px;
+}
+#conteinerBanner,
+#conteinerForm {
+    flex: 1 1 0;
+    width: 50%;
+}
+#conteinerBanner {
+    text-align: center;
+}
+#conteinerBanner img {
+    width: 100%;
+    margin-right: 15px;
+    margin-top: 25px;
+    max-width: 380px;
+}
+#conteinerForm {
+    text-align: center;
+}
+/* Login form */
+#formBox {
+    background-color: #fff;
+    border: 1px solid #dbdbdb;
+    width: 350px;
+    margin-top: 30px;
+}
+#logoInstagram {
+    width: 175px;
+    height: 51px;
+    margin: 30px auto 12px;
+}
+#formLogin {
+    margin-top: 20px;
+}
+#formLogin input {
+    display: block;
+    font-size: 12px;
+    padding: 12px 9px;
+    background-color: #fafafa;
+    border: 1px solid #dbdbdb;
+    border-radius: 3px;
+    width: 268px;
+    margin: 5px auto;
+}
+#formLogin input[type="input"]{
+    background-color: #b2dffc;
+    color: #fff;
+    margin-top: 15px;
+    border-radius: 5px;
+    height: 30px;
+    font-size: 13px;
+    padding: 0;
+    font-weight: bold;
+}
+/* Separador */
+#separador {
+    position: relative;
+}
+#linha {
+    border-top: 1px solid #dbdbdb;
+    width: 268px;
+    margin: 25px auto 35px;
+}
+#separador span {
+    position: absolute;
+    text-transform: uppercase;
+    color: #bbb;
+    background-color: #fff;
+    top: -6px;
+    width: 50px;
+    margin-left: -25px;
+    font-size: 14px;
+}
+/* Facebook login */
+#facebookLogin {
+    margin-bottom: 25px;
+}
+#facebookLogin a {
+    text-decoration: none;
+    color: #285185;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#facebookLogin img {
+    width: 16px;
+    height: 16px;
+    margin-right: 8px;
+}
+#facebookLogin span {
+    font-weight: bold;
+    font-size: 13px;
+    margin-top: 1px;
+}
+/* Esqueceu a senha */
+#esqueceuSenha {
+    margin-bottom: 20px;
+    font-size: 12px;
+}
+#esqueceuSenha a {
+    text-decoration: none;
+    color: #373799;
+}
+/* Cadastro */
+#conteinerCadastro {
+    background-color: #fff;
+    border: 1px solid #dbdbdb;
+    width: 350px;
+    margin-top: 10px;
+    padding: 25px;
+
+}
+#conteinerCadastro p {
+    font-size: 14px;
+    color: #262626;
+}
+#conteinerCadastro a {
+    color: #4a95f6;
+    font-weight: bold;
+    text-decoration: none;
+}
+/* Aplicativos */ 
+#conteinerAplicativo {
+    text-align: center;
+    width: 350px;
+}
+
+#conteinerAplicativo p{
+    margin: 20px 0;
+    font-size: 13px;
+}
+#conteinerAplicativo a {
+    text-decoration: none;
+}
+#conteinerAplicativo img {
+    width: 136px;
+    height: 40px;
+}
+/* Footer */ 
+footer {
+    text-align:  left;
+    width: 1000px;
+    margin: 50px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+footer #footerLinks {
+    display: flex;
+    list-style: none;
+}
+#footerLinks li {
+    margin-right: 10px;
+}
+#footerLinks a,
+#copyright {
+    text-decoration: none;
+    color: #8e8e8e;
+    font-size: 12px;
+}
+#copyright {
+    margin-top: 10px;
+}
+/* Responsividade */
+@media (max-width: 450px){
+    body {
+        background-color: #fff;
+    }
+    #conteinerBanner {
+        display: none;
+    }
+    #conteinerMain,
+    #formBox {
+        margin-top: 0;
+    }
+    #conteinerMain,
+    #formBox, 
+    #conteinerCadastro,
+    #conteinerAplicativo {
+        width: 100%;
+        border: none;
+    }
+    footer {
+        width: 90px;
+    }
+    #footerLinks {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    #footerLinks {
+        margin-bottom: 10px;
+    }
+}

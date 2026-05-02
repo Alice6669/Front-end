@@ -1,0 +1,131 @@
+/* Geral */
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333;
+    box-sizing: border-box;
+}
+html{
+    height: 100vh;
+}
+body{
+    background-image: url("img/bg.jpg");
+    background-position: center;
+    background-size: cover;
+}
+button{
+    background-color: #fdfdfd;
+    color: #102f5e;
+    border: 2px solid #102f5e;
+    padding: 0.3rem 0.6rem;
+    font-size: 1rem;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s;
+}
+button:hover{
+    background-color: #102f5e;
+    color: #fff;
+}
+button:hover > i{
+    color: #fff;
+}
+button i{
+    color: #102f5e;
+    font-weight: bolder;
+    pointer-events: none;
+}
+input,select{
+    padding: 0.25rem 0.5rem;
+}
+.hide{
+    display: none;
+}
+/* To do header */
+#todoConteiner{
+    max-width: 450px;
+    margin: 3rem auto 0;
+    background-color: #fdfdfd;
+    border-radius: 15px;
+    padding: 1.5rem;
+}
+#todoConteiner header{
+    text-align: center;
+    padding: 0 1rem 1rem;
+    border-bottom: #ccc 1px solid;
+}
+#todoForm, #editForm{
+    padding: 1rem;
+    border-bottom: 1px solid #ccc;
+}
+#todoForm p, #editForm p{
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+.formControle{
+    display: flex;
+}
+.formControle input {
+    margin-right: 0.3rem;
+}
+#cancelarEditBtn{
+    margin-top: 1rem;
+}
+
+/* Barra de ferramentas */
+#toolBar {
+    padding: 1rem;
+    border-bottom: 1px solid #ccc;
+    display: flex;
+}
+#toolBar h4{
+    margin-bottom: 0.5rem;
+}
+#buscar {
+    border-right: 1px solid #ddd;
+    padding-right: 1rem;
+    margin-right: 1rem;
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+}
+#buscar form{
+    display: flex;
+}
+#buscar input{
+    width: 100%; 
+    margin-right: 0.3rem;
+}
+#filtro{
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+}
+
+/* to do Lista */
+.todo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    border-bottom: 1px solid #ccc;
+    transition: 0.3rem;
+}
+.todo h3{
+    flex: 1;
+    font-size: 0.9rem;
+}
+.todo button {
+    margin-right: 0.3rem;
+}
+.done {
+    background-color: #395169;
+}
+.done h3{
+    color: #fff;
+    text-decoration: line-through;
+    font-style: italic;
+}

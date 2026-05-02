@@ -1,0 +1,57 @@
+html {
+    font-family: Helvetica;
+    background-color: #ddd;
+}
+#conteiner {
+    max-width: 1500px;
+    background-color: #fff;
+    position: relative;
+    margin: 50px auto;
+    padding: 20px 50px;
+}
+.bold {
+    font-weight: bold;
+}
+#cabecalho {
+    text-align: center;
+}
+#titulo {
+    font-size: 40px
+}
+#FrasseInicial {
+    font-style: italic;
+}
+#conteinerImagemDestaque {
+    text-align: center;
+    margin-top: 30px;
+}
+#conteinerBiografia {
+    padding: 25px 0;
+    margin: 25px 0;
+    border-top: 1px dashed #ddd;
+    border-bottom: 1px dashed #ddd;
+}
+#conteinerCitacoes {
+    background-color: #ddd;
+    padding:  30px;
+}
+blockquote {
+    font-style: italic;
+}
+#curiosidades {
+    padding: 25px 0;
+    margin: 25px 0;
+    border-top: 1px dashed #ddd;
+    border-bottom: 1px dashed #ddd;
+}
+li {
+    height: 30px;
+}
+.segundaImagem {
+    font-weight: bold;
+    text-align: center;
+    Max-width: 100;
+    Max-height: 200;
+    height: auto;
+    width: auto;
+}

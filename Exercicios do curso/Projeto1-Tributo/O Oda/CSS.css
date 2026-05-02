@@ -1,0 +1,46 @@
+html {
+    background-color: #d4d4d4;
+    font-family: Helvetica;
+}
+#conteiner {
+    width: 1100px;
+    position: relative;
+    margin: 50px auto;
+    padding: 20px 50px;
+    background-color: white;
+}
+#conteinerCabecalho {
+    text-align: center;
+}
+.bold {
+    font-weight: bold;
+}
+#cabecalho {
+    text-align: center;
+
+}
+#titulo {
+    height: 40px;
+}
+#frasseInicial {
+    font-style: italic;
+}
+#conteinerImgPrincipal {
+    text-align: center;
+    margin-top: 30px;
+}
+#conteinerBiografia {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border-top: 1px dashed  #757474;
+    border-bottom: 1px dashed #757474;
+}
+blockquote {
+    font-style: italic;
+}
+li {
+    height: 30px;
+}
+#img2 {
+    text-align: center;
+}

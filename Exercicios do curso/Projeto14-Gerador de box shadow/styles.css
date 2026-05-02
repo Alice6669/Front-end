@@ -1,0 +1,133 @@
+/* Geral */
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h2{
+    margin-bottom: 1.6rem;
+    text-align: center;
+    color: #333;
+}
+
+body{
+    background-color: #eee8e8;
+    min-height: 1000px;
+}
+
+/* Gerador de box shadow */
+
+#boxShadowGenerator{
+    display: flex;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+#controleConteiner,
+#preview{
+    flex: 1;
+    padding: 2rem;
+}
+
+.formControle{
+    display: flex;
+    padding-bottom: 1.2rem;
+    margin-bottom: 1.2rem;
+    border-bottom: 2px dashed #ccc;
+}
+
+.formControle label{
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: #555;
+}
+
+.rangeInput{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.rangeInput input[type="range"]{
+    -webkit-appearance: none;
+    appearance: none;
+    width: 100%;
+    height: 8px;
+    background-color: #d3d3d3;
+    outline: none;
+
+}
+
+.rangeInput input[type="range"]::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    background-color: #e9d609;
+    cursor: pointer;
+}
+
+.referenciaInput{
+    display: flex;
+    align-items: center;
+}
+
+.referenciaInput p{
+    margin-left: 4px;
+}
+
+.referenciaInput input[type="text"]{
+    height: 30px;
+    width: 30px;
+    margin-left: 1rem;
+    text-align: center;
+}
+
+/* Novas funcionalidade */
+
+#corValue{
+    min-width: 100px;
+}
+
+#sombraInterna{
+    align-self: start;
+    height: 20px;
+    width: 20px;
+}
+
+/* preview */
+
+#box{
+    width: 100%;
+    height: 300px;
+    background-color: #d3c30e;
+}
+
+/* Área de geração */
+
+#gerouRegra{
+    text-align: center;
+}
+
+#gerouRegra p{
+    margin-bottom: 0.5rem;
+}
+
+#regrasArea{
+    background-color: #d3d3d3;
+    max-width: 1000px;
+    margin: 0 auto;
+    border: 4px solid #e9d609;
+    transition: 0.4s;
+}
+
+#regrasArea:hover{
+    background-color: #c4c1c1;
+}
+
+#copiarInstrucao{
+    font-style: italic;
+    margin-top: 1rem;
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de IMC JS</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;
+        0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100..900;
+        1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="conteiner">
+        <div id="calcConteiner">
+            <h2>Calculadora de IMC</h2>
+            <form id="imcForm">
+                <div class="formInputs">
+                    <div class="formControle">
+                        <label for="altura">Altura:</label>
+                        <input type="text" name="altura" id="altura" placeholder="Exemplo 1,75">
+                    </div>
+                    <div class="formControle">
+                        <label for="peso">Peso:</label>
+                        <input type="text" name="peso" id="peso" placeholder="Exemplo 70">
+                    </div>
+                </div>
+                <div id="acaoControle">
+                    <button id="calcularBotao">Calcular</button>
+                    <button id="limpar">Limpar</button>
+                </div>
+            </form>
+        </div>
+        <div id="resultadoConteiner" class="hide" >
+            <p id="imcNumero">Seu IMC: <span >25</span></p>
+            <p id="situacaoAtual">Situacao Atual: <span >magrassa</span></p>
+            <h3>Confira as classificações:</h3>
+            <div id="imcTabela">
+                <div class="tabelaHeader">
+                    <h4>IMC</h4>
+                    <h4>classificação</h4>
+                    <h4>Obesidade</h4>
+                </div>
+            </div>
+            <button id="voltarBotao">Voltar</button>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,191 @@
+/* Geral */
+
+*{
+    font-family: "Montserrat", sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: #333;
+}
+
+html, body{
+    height: auto;
+    min-height: 100vh;
+}
+
+html {
+    background: linear-gradient(180deg, #ea03ff 0%, #0097ff 100%);
+}
+
+input:focus{
+    outline: none;
+}
+
+/* Corpo */
+
+#registroConteiner{
+    max-width: 900px;
+    min-height: 80vh;
+    margin: 2rem auto;
+    display: flex;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, 
+        rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+#registroBanner{
+    background-image: url(img/bg-form.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 50%;
+}
+#bannerLayer{
+    background-color: rgba(25, 11, 122, 0.4);
+    height: 100%;
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+}
+
+#registroBanner h1{
+    font-size: 4rem;
+    margin-bottom: 1.5rem;
+    color: #fff;
+    word-spacing: 50rem;
+}
+
+#registroForm {
+    background-color: #fdfdfd;
+    padding: 2rem;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+#registroForm h2{
+    text-align: center;
+    margin-bottom: 1rem;
+    font-size: 2.2rem;
+}
+
+#registroForm p{
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: #aaa;
+    font-size: 0.8rem;
+}
+
+.formControle{
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.formControle label {
+    font-weight: bold;
+    margin-bottom: 0.6rem;
+}
+
+.formControle input[type="text"], 
+.formControle input[type="email"],
+.formControle input[type="password"]{
+    border: none;
+    width: 100%;
+    background-color: #ccc;
+    padding: 15px;
+    border-bottom: 1px solid #aaa;
+}
+
+#gerarSenha{
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+#gerarSenha:hover{
+    color:#0099ff;
+}
+
+#registroForm #gerouSenha{
+    border: 1px solid #0099ff;
+    border-radius: 4px;
+    font-weight: bold;
+    font-size: 1.2rem;
+    padding: 0.4rem;
+    color: #333;
+    text-align: center;
+    margin-bottom: 1rem;
+    
+}
+
+#registroForm #gerouSenha p{
+    color: #81d340;
+    margin-bottom: 0.5rem;
+}
+
+#registroForm input[type="submit"]{
+    background-color: #81d340;
+    color: #fff;
+    opacity: 0.8;
+    border: none;
+    border-radius: 2rem;
+    padding: 1rem 1.4rem;
+    max-width: 150px;
+    cursor: pointer;
+    position: relative;
+    left: 280px;
+    transition: 0.4s;
+}
+
+#registroForm input[type="submit"]:hover,
+#copiarSenha:hover,
+#senhaCriada:hover{
+    opacity: 1;
+}
+
+#generateOption {
+    margin-bottom: 1rem;
+    padding: 1rem;
+    border: 1px solid #ddd;
+}
+
+#generateOption .formControle {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+   
+}
+
+#generateOption .formControle input[type="text"]{
+    max-width: 180px;
+    
+}
+
+#generateOption .formControle label.lenght{
+    position: relative;
+    right: 10px;
+}
+
+#generateOption .formControle input[type="checkbox"]{
+    min-width: 30px;
+}
+
+#copiarSenha, #senhaCriada{
+    border: none;
+    background-color: #81d340;
+    color: #fff;
+    opacity: 0.8;
+    border: none;
+    border-radius: 2rem;
+    padding: 1rem 1.4rem;
+    max-width: 150px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+#senhaCriada{
+    background-color: #0097ff;
+}
+
+.hide{
+    display: none;
+}
