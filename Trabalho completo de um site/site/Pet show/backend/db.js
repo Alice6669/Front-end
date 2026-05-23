@@ -3,7 +3,7 @@ import mysql from 'mysql2/promise';
 const pool = mysql.createPool({
   host: 'localhost',
   user: 'root',
-  password: '@Undertale13',
+  password: '',
   database: 'DB_pet_show',
   connectionLimit: 10,
 });
