@@ -77,6 +77,20 @@ a:hover {
     margin-bottom: 1.5rem;
     font-size: 1.6rem;
 }
+#conteinerTags nav div{
+    margin: 10px;
+    
+}
+
+#conteinerTags nav a{
+    border-bottom: 1px dashed #333;
+
+    margin: 5px 10px;
+}
+
+#conteinerTags nav a:hover{
+    border-bottom: 1px dashed #37a1f7;
+}
 form {
     display: flex;
 }
